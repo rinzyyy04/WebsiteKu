@@ -1,45 +1,68 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #111;
-    color: #fff;
+    background-color: #0d0d0d;
+    color: #f2f2f2;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
   }
   
   header {
+    background: linear-gradient(to right, #ff0000, #aa0000);
     text-align: center;
-    padding: 50px;
-    background: linear-gradient(90deg, #ff0000, #770000);
+    padding: 80px 20px;
   }
   
   header h1 {
-    margin: 0;
     font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2em;
+    color: #eee;
   }
   
   .about, .projects {
-    padding: 30px;
-    max-width: 800px;
-    margin: auto;
+    background-color: #1a1a1a;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
   }
   
-  .about h2, .projects h2 {
-    color: #ff5555;
+  h2 {
+    color: #ff4444;
+    margin-bottom: 20px;
   }
   
-  .projects ul {
-    list-style: none;
-    padding-left: 0;
+  .card {
+    background-color: #262626;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: 0.3s;
   }
   
-  .projects li::before {
-    content: "🔥 ";
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
   }
   
   footer {
     text-align: center;
     padding: 20px;
-    background-color: #222;
-    margin-top: 50px;
+    background-color: #111;
+    margin-top: 40px;
     font-size: 0.9em;
+    color: #aaa;
   }
