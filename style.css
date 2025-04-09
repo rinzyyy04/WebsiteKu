@@ -66,12 +66,3 @@
     font-size: 0.9em;
     color: #aaa;
   }
-
-  .profil {
-    width: 200px;
-    height: auto;
-    border-radius: 20px;
-    display: block;
-    margin: 20px auto;
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
-  }
